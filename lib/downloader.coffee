@@ -79,13 +79,11 @@ class Downloader extends Manifest
         title = obj.video.title
         title = title.replace ':', ' - '
 
-
-
         vimeo     =
           id: obj.video.id
           title: obj.video.title
           url: obj.request.files.h264.hd.url
-          filename: "#{obj.video.title} [#{obj.video.id}].mp4"
+          filename: "#{title} [#{obj.video.id}].mp4"
         deferred.resolve vimeo
     deferred.promise
 
