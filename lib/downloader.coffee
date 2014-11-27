@@ -77,7 +77,7 @@ class Downloader extends Manifest
           deferred.reject "Video id '#{obj.video.id}', not found! :("
       else
         title = obj.video.title
-        title = title?.replace ':', ' - '
+        title = title.replace ':', ' - '
 
 
 
@@ -105,7 +105,7 @@ class Downloader extends Manifest
       if err
         deferred.reject 'Download error: ', err
       else
-        console.log 'Download complete : ' + chalk.green("#{vimeo.filename}'")
+        console.log 'Download complete : ' + chalk.green("'#{vimeo.filename}'")
         deferred.resolve _id
     deferred.promise
 
