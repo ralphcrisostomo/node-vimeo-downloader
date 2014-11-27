@@ -1,0 +1,24 @@
+#!/usr/bin/env coffee
+
+# *Modules*
+commander = require 'commander'
+
+
+# *Setup*
+commander
+.version('0.0.1')
+.option('-x, --download true', 'Execute download')
+.option('-a, --add <n>', 'Add video to the queue')
+.option('-u, --user <string>', 'Download user album')
+#.option('-p, --peppers <string>', 'Add peppers')
+#.option('-P, --pineapple', 'Add pineapple')
+#.option('-b, --bbq', 'Add bbq sauce')
+#.option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
+.parse(process.argv)
+
+
+
+main = require '../lib/main'
+main(commander)
+
+

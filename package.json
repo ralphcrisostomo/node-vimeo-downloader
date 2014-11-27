@@ -1,0 +1,61 @@
+{
+  "name": "vimeo-downloader",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ralphcrisostomo/vimeo-downloader",
+  "author": {
+    "name": "Ralph Crisostomo",
+    "email": "rrecrisostomo@gmail.com",
+    "url": "http://ralphcrisostomo.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ralphcrisostomo/vimeo-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ralphcrisostomo/vimeo-downloader/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ralphcrisostomo/vimeo-downloader/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "./lib/main",
+  "bin": {
+    "vimeo-downloader": "./bin/cli"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "q": "~1.1.1",
+    "underscore": "~1.7.0",
+    "moment": "~2.8.3",
+    "commander": "~2.5.0",
+    "coffee-script": "~1.8.0",
+    "superagent": "~0.21.0",
+    "download": "~3.1.2",
+    "download-status": "~2.1.0",
+    "chalk": "~0.5.1",
+    "request": "~2.48.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "~1.0.0",
+    "time-grunt": "~1.0.0",
+    "mocha": "~2.0.1",
+    "grunt-mocha-test": "~0.12.3",
+    "coffeelint": "~1.6.1",
+    "grunt-coffeelint": "0.0.13",
+    "chai": "~1.10.0",
+    "chai-json-schema": "~1.1.0",
+    "superagent": "~0.21.0",
+    "sinon": "~1.12.1",
+    "faker": "~2.0.1"
+  },
+  "keywords": [],
+  "scripts": {
+    "test": "grunt test"
+  }
+}
