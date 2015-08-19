@@ -62,7 +62,7 @@ class Downloader extends Manifest
 
     console.log chalk.blue('parsing vimeo html string...')
     deferred    = Q.defer()
-    regex_a     = /a={(.*)};if/
+    regex_a     = /t={(.*)};if/
     regex_b     = /{(.*)}/
     result      = html_string.match(regex_a)
 

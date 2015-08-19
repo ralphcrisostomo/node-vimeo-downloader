@@ -9,6 +9,8 @@ Downloader  = require './downloader'
 User        = require './user'
 
 module.exports = (commander)->
+
+
   user      = commander.user
   add       = commander.add
   download  = commander.download

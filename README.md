@@ -1,3 +1,8 @@
+# How to use:
+1. vimeo-downloader --user=jasonmagbanua
+2. vimeo-downloader --download=true
+3. vimeo-downloader --add=
+
 # vimeo-downloader
 
 The best project ever.
